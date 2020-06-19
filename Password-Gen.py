@@ -3,8 +3,7 @@ import string, random #module that consists of all character such as lowercase, 
 
 
 def main(userInput): # a function to generate a password based on how many characters a user wishes to have
-    specialCharacter = [random.choice(string.punctuation) for character in range(userInput)] # a list of random special 
-    #character will be generated based on the length of the user input
+    specialCharacter = [random.choice(string.punctuation) for character in range(userInput)] # a list of random special character will be generated based on the length of the user input
     wordLower = [random.choice(string.ascii_lowercase) for lower in range(userInput)] 
     wordUpper = [random.choice(string.ascii_uppercase) for upper in range(userInput)]
     numbers = [random.choice(string.digits) for number in range(userInput)]

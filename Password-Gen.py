@@ -12,7 +12,11 @@ def main(userInput): # a function to generate a password based on how many chara
     return generatedPassword
 
 print("Welcome to the secure random password generator.")
-print("Generating random passwords that consist of 12 characters or more. \nTo make your password more secure, the password will consist of an uppercase, lowercase, number and a special character.")
+about_Gen = '''
+Generating random passwords that consist of 12 characters or more.
+To make your password more secure, the password will consist of an uppercase, lowercase, number and a special character.
+'''
+print(about_Gen)
 
 question = int(input('Please enter the password length: ')) #we have a input function to ask the user to enter the length of the password he/she wishes to have generated
 answer = main(question) # here we have the password function that has been passed with the question variable as the argument which is stored in a variable
